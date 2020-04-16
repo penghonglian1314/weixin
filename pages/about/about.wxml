@@ -1,0 +1,18 @@
+<view class="page-header">
+  {{title}}
+</view>
+<scroll-view class="pagebody" scroll-y>
+  <view class="item" wx:for="{{subjects}}" wx:key="id">
+    <image class="small_img" src="{{item.images.small}}"></image>
+    <view class="poster ">
+      <text class="titl">{{item.title}}</text>
+      <text class="sub-title">{{item.original_title}}  ({{item.year}})
+        </text>
+      <text class="author ">
+        <text wx:for="{{item.directors}}" wx:key="id">{{item.name}}</text>
+      </text>
+    </view>
+    <text class="rating">{{item.rating.average}}</text>
+  </view>
+
+</scroll-view>

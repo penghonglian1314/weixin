@@ -1,0 +1,10 @@
+/* pages/search/search.wxss */
+
+.page-header {
+  text-align: center;
+  background-color: #fff;
+}
+
+.inputText {
+  font-size: 32rpx;
+}

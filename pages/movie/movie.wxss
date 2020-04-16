@@ -1,0 +1,39 @@
+.itemImg {
+  width: 500rpx;
+  height: 700rpx;
+  display: block;
+  margin: 20rpx auto;
+}
+
+.page .title {
+  font-size: 32rpx;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40rpx;
+}
+
+.rating, .author, .actor {
+  font-size: 24rpx;
+  font-weight: 400;
+  display: block;
+  color: #999;
+  margin-left: 120rpx;
+  padding: 10rpx;
+}
+
+.abstract {
+  font-weight: 700;
+  display: block;
+  margin: 50rpx 0 10rpx 90rpx;
+}
+
+.summary {
+  font-size: 28rpx;
+  white-space: 4rem;
+  margin: 0 95rpx;
+  line-height: 50rpx;
+}
+
+.summary text {
+  padding: 10rpx;
+}

@@ -1,0 +1,82 @@
+/* pages/detail/detail.wxss */
+
+.images image {
+  width: 300rpx;
+  height: 400rpx;
+  margin-left: 20rpx;
+}
+
+.posters {
+  font-size: 28rpx;
+  color: #999;
+  flex: 1;
+  margin-top: 40rpx;
+}
+
+.page-detail {
+  display: flex;
+}
+
+.page-header {
+  display: flex;
+}
+
+.author, .actor, .types, .times {
+  display: block;
+  text-align: left;
+  margin: 10rpx 0 30rpx 25rpx;
+}
+
+.sim {
+  font-size: 32rpx;
+  font-weight: 700;
+  margin-left: 20rpx;
+}
+
+.allsim, .simcommet {
+  font-size: 28rpx;
+  white-space: 4rem;
+  margin: 0 22rpx;
+  line-height: 50rpx;
+}
+
+.simImg {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+  display: inline-block;
+  margin: 10rpx 0 10rpx 20rpx;
+}
+
+.comauthor {
+  font-size: 28rpx;
+  color: green;
+}
+
+.simcommet {
+  line-height: 40rpx;
+}
+
+.simItem {
+  width: 300rpx;
+  height: 400rpx;
+  padding: 0;
+}
+
+.tag {
+  display: flex;
+}
+
+.tags {
+  padding: 15rpx 20rpx;
+  text-align: center;
+  background-color: #f0f0f0;
+  color: green;
+  font-size: 28rpx;
+  display: inline-block;
+}
+
+.content {
+  margin-bottom: 20rpx;
+}

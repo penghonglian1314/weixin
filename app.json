@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/movie/movie",
+    "pages/about/about",
+    "pages/new/new",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "豆瓣电影",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "推荐电影",
+        "iconPath": "/assets/images/c1.png",
+        "selectedIconPath": "/assets/images/c2.png"
+      },
+      {
+        "pagePath": "pages/new/new",
+        "text": "即将上映",
+        "iconPath": "/assets/images/will1.png",
+        "selectedIconPath": "/assets/images/will2.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "最新影片",
+        "iconPath": "/assets/images/new1.png",
+        "selectedIconPath": "/assets/images/new2.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

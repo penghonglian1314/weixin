@@ -1,0 +1,19 @@
+<view class="page-header">
+  <input placeholder="请输入您要查询的内容" class="inputText" focus="true" bindchange="search" />
+</view>
+<scroll-view class="pagebody" scroll-y>
+  <navigator url="../movie/movie?id={{item.id}}" wx:for="{{subject}}" wx:key="id">
+    <view class="item">
+      <image class="small_img" src="{{item.images.small}}"></image>
+      <view class="poster ">
+        <text class="titl">{{item.title}}</text>
+        <text class="sub-title">{{item.original_title}}  ({{item.year}})
+        </text>
+        <text class="author ">
+        <text wx:for="{{item.directors}}" wx:key="id">{{item.name}}</text>
+        </text>
+      </view>
+      <text class="rating">{{item.rating.average}}</text>
+    </view>
+  </navigator>
+</scroll-view>

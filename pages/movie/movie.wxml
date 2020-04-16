@@ -1,0 +1,25 @@
+<scroll-view scroll-y class="page">
+  <view>
+    <image src="{{movies.images.small}}" class="itemImg" />
+  </view>
+  <text class="title">{{movies.title}}({{movies.year}})</text>
+  <view class="posters">
+    <text class="rating">评分: {{movies.rating.average}}</text>
+    <text class="author">导演: <text wx:for="{{movies.directors}}" wx:key="id">{{item.name}}</text>
+
+    </text>
+
+    <text class="actor">主演: <text  wx:for="{{movies.casts}}" wx:key="id"> {{item.name}} </text>
+
+    </text>
+
+    <view class="news">
+      <text class="abstract">摘要 : </text>
+      <view class="summary">
+
+        {{movies.summary}}
+
+      </view>
+    </view>
+  </view>
+</scroll-view>

@@ -1,0 +1,60 @@
+page {
+  font-family: "Microsoft YaHei";
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header {
+  text-align: center;
+  border-bottom: 2rpx solid #ccc;
+  margin-bottom: 10rpx;
+  padding: 20rpx 0;
+  color: #999;
+  font-size: 40rpx;
+}
+
+.pagebody {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  padding: 20rpx 40rpx;
+  border-bottom: 2rpx solid #eee;
+}
+
+.small_img {
+  width: 128rpx;
+  height: 128rpx;
+  margin-right: 20rpx;
+}
+
+.poster {
+  flex: 1;
+}
+
+.title, .sub-title {
+  display: block;
+}
+
+.item .title {
+  font-size: 32rpx;
+}
+
+.item .sub-title {
+  font-size: 24rpx;
+  color: #c0c0c0;
+}
+
+.author {
+  font-size: 26rpx;
+  color: #999;
+}
+
+.rating {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: red;
+}

@@ -1,0 +1,19 @@
+<view class="page-header">
+  {{title}}
+</view>
+<scroll-view class="pagebody" scroll-y>
+  <navigator url="../detail/detail?id={{item.id}}" wx:for="{{subjects}}" wx:key="id">
+    <view class="item">
+      <image class="small_img" src="{{item.images.small}}"></image>
+      <view class="poster ">
+        <text class="titl">{{item.title}}</text>
+        <text class="sub-title" v-for="item">类型:<text> {{item.genres}} </text>
+        </text>
+        <text class="author">
+        <text wx:for="{{item.casts}}" wx:key="id"> {{item.name}} </text>
+        </text>
+      </view>
+    </view>
+  </navigator>
+
+</scroll-view>
