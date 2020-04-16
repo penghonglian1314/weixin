@@ -1,24 +1,26 @@
 <scroll-view scroll-y class="page">
   <view>
-    <image src="{{movies.images.small}}" class="itemImg" />
+    <navigator url="../detail/detail?id={{movies.id}}">
+      <image src="{{movies.images.small}}" class="itemImg" />
+    </navigator>
   </view>
   <text class="title">{{movies.title}}({{movies.year}})</text>
   <view class="posters">
     <text class="rating">评分: {{movies.rating.average}}</text>
     <text class="author">导演: <text wx:for="{{movies.directors}}" wx:key="id">{{item.name}}</text>
-
     </text>
-
     <text class="actor">主演: <text  wx:for="{{movies.casts}}" wx:key="id"> {{item.name}} </text>
-
     </text>
-
     <view class="news">
       <text class="abstract">摘要 : </text>
       <view class="summary">
-
         {{movies.summary}}
-
+      </view>
+    </view>
+    <view>
+      <text class="abstract">相关视频 : </text>
+      <view class="movies" wx:for="{{movies.videos}}" wx:key="id">
+        <video src="{{item.sample_link}}"/>
       </view>
     </view>
   </view>

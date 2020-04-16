@@ -4,8 +4,8 @@
       <image src="{{subjects.images.small}}" />
     </view>
     <view class="posters">
-      <text class="author">导演：<text wx:for="{{subjects.directors}}" wx:Key="id"> {{item.name}} </text></text>
-      <text class="actor">主演：<text wx:for="{{subjects.casts}}" wx:Key="id"> {{item.name}} </text></text>
+      <text class="author">导演<text wx:for="{{subjects.directors}}" wx:Key="id"> {{item.name}} </text></text>
+      <text class="actor">主演<text wx:for="{{subjects.casts}}" wx:Key="id"> {{item.name}} </text></text>
       <text class="types">类型: <text> {{subjects.genres}} </text></text>
       <text class="times">上映时间: {{subjects.mainland_pubdate}}</text>
     </view>
@@ -18,12 +18,12 @@
   </view>
   <view>
     <text class="sim">{{subjects.title}}的评价标签：</text>
-    <view wx:for="{{subjects.tags}}" wx:key="{{id}}" class="tag">
-      <view class="tags"> {{item}}</view>
+    <view class="tag">
+      <text wx:for="{{subjects.tags}}" wx:key="{{id}}" class="tags">{{item}}</text>
     </view>
   </view>
   <view>
-    <text class="content">讨论区</text>
+    <text class="sim">讨论区</text>
     <view wx:for="{{subjects.popular_reviews}}" wx:key="id" class="simView">
       <image src="{{item.author.avatar}}" class="simImg"></image>
       <text class="comauthor">{{item.author.name}}</text>
